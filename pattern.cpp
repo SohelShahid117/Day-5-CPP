@@ -79,6 +79,7 @@ int main()
                     cout << " ";
                 }
                 else{
+                    //cout<<"*"<<" ";
                     cout<<"*";
                 }
         }
@@ -91,20 +92,32 @@ int main()
     cin>>n2;
     for(int i = 1;i<=n2;i++){
         for (int j= 1;j<=i;j++){
-                cout << i;
+                cout << i<<" ";
         }
         cout<<endl;
     }
+
     cout<< "floyds triangle\n";
     //16 min
-     for(int i = 1;i<=6;i++){
+    int k =1 ;
+     for(int i = 1;i<=5;i++){
         for (int j= 1;j<=i;j++){
-                if(j>=i){
-                    cout << j ;
-                }
+                cout <<k<<" ";
+                k++;
         }
+
         cout<<endl;
     }
+
+    cout<< "butterFly pattern\n";
+      for(int i = 1;i<=4;i++){
+        for (int j= 1;j<=8;j++){
+                if(j<=i || j=8){
+
+                }
+
+        }
+
 
 
     return 0;
