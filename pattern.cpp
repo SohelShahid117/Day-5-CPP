@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//4.1 Awesome Pattern Questions -1
 int main()
 {
     // 4.1 Awesome Pattern Questions -1 | Guaranteed Placement Course
@@ -88,7 +89,7 @@ int main()
 
     cout<< "half pyramid using numbers\n";
     int n2;
-    cout << "enter a nmbr : ";
+    cout << "enter a nmbr for half pyramid: ";
     cin>>n2;
     for(int i = 1;i<=n2;i++){
         for (int j= 1;j<=i;j++){
@@ -112,11 +113,59 @@ int main()
     cout<< "butterFly pattern\n";
       for(int i = 1;i<=4;i++){
         for (int j= 1;j<=8;j++){
-                if(j<=i || j=8){
-
+                if(j<=i || j>8-i){
+                        cout<< "*";
                 }
-
+                else{
+                    cout<< " ";
+                }
         }
+        cout<<endl;
+      }
+
+    for(int i=4;i>=1;i--){
+        for (int j= 1;j<=8;j++){
+                if(j<=i || j>8-i){
+                        cout<< "*";
+                }
+                else{
+                    cout<< " ";
+                }
+        }
+        cout<<endl;
+      }
+
+    cout<< "butterFly pattern again\n";
+    int n3;
+    cout << "enter a nmbr for butterfly pattern : ";
+    cin>>n3;
+    for(int i=1;i<=n3;i++){
+        for(int j =1;j<=i;j++){
+            cout << "*";
+        }
+        int space = 2*n3-2*i;
+        for(int k =1;k<=space;k++){
+            cout << " ";
+        }
+          for(int j =1;j<=i;j++){
+            cout << "*";
+        }
+        cout<<endl;
+    }
+     for(int i=n3;i>=1;i--){
+        for(int j =1;j<=i;j++){
+            cout << "*";
+        }
+        int space = 2*n3-2*i;
+        for(int k =1;k<=space;k++){
+            cout << " ";
+        }
+          for(int j =1;j<=i;j++){
+            cout << "*";
+        }
+        cout<<endl;
+    }
+
 
 
 
