@@ -85,8 +85,6 @@ int main()
         cout<<endl;
     }
 
-    cout<< "half pyramid using numbers\n";
-
 
     return 0;
 }
