@@ -86,6 +86,25 @@ int main()
     }
 
     cout<< "half pyramid using numbers\n";
+    int n2;
+    cout << "enter a nmbr : ";
+    cin>>n2;
+    for(int i = 1;i<=n2;i++){
+        for (int j= 1;j<=i;j++){
+                cout << i;
+        }
+        cout<<endl;
+    }
+    cout<< "floyds triangle\n";
+    //16 min
+     for(int i = 1;i<=6;i++){
+        for (int j= 1;j<=i;j++){
+                if(j>=i){
+                    cout << j ;
+                }
+        }
+        cout<<endl;
+    }
 
 
     return 0;
